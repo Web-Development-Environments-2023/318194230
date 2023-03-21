@@ -1,7 +1,263 @@
-#menu
+body {
+    margin: 0;
+    padding: 0;
+    background: url(Photos/How-to-trade-stocks.webp) no-repeat center center fixed;
+    background-size: cover;
+    
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* To make sure the toolbar is on top of other elements */
+  }
+
+  .toolbar {
+    height: 40px; /* set the height of the toolbar */
+    background-color: #333333; /* set the background color of the toolbar */
+  }
+  
+  .toolbar img {
+    display: block; /* set the display property of the image to block */
+    max-height: 100%; /* set the max-height property of the image to 100% */
+    max-width: 100%; /* set the max-width property of the image to 100% */
+  }
+  
+  
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 0 16px;
+  }
+
+  nav ul li a:hover {
+    color: rgb(36, 206, 45); /* Change the color to your desired color */
+  }
+  
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 50px);
+    align-items: flex-end;
+    justify-content: center;
+    
+  }
+  
+  .content {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    background: url(Photos/How-to-trade-stocks.webp) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .content h2 {
+    margin-top: 0;
+  }
+  
+  #My Photos {
+    text-align: center;
+    
+  }
+
+  img {
+    width: 200;
+    height: 200px;
+  }
+  
+  
+  .photo-container {
+    width: 1500px;
+    overflow: scroll;
+    white-space: nowrap;
+    margin: 0 auto;
+    
+  }
+  
+  .photo {
+    width: calc(100% / 3);
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    
+  }
+
+  #My Playlist {
+    text-align: center;
+  }
+  
+  
+  .playlist-container {
+    width:1300px;
+    overflow: scroll;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+  
+  .Playlist {
+    width: calc(100% / 2);
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .QR{
+    width: 600;
+    height: 600px;
+    text-align: center;
+
+  }
+
+  #contact-me label {
+    font-size: 28px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: red;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+
+
+  
+  
+/* Change the background color */
+#email 
 {
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+  background-color: #f1f1f1;
+  border: 2px solid #10c525;
+  border-radius: 5px;
+  color: #d35656;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  background-image: url('email-icon.png');
+  background-repeat: no-repeat;
+  background-position: 1000px center;
+  padding-left: 40px;
+  font-size: 18px;
+} 
+
+#message 
+{
+  background-color: #f1f1f1;
+  border: 2px solid #10c525;
+  border-radius: 5px;
+  color: #d35656;
+  box-shadow: 0 0 5px rgba(238, 138, 8, 0.1);
+
+  background-image: url('email-icon.png');
+  background-repeat: no-repeat;
+  background-position: 1000px center;
+  padding-left: 40px;
+  font-size: 18px;
+} 
+
+
+#name 
+{
+  background-color: #f1f1f1;
+  border: 2px solid #10c525;
+  border-radius: 5px;
+  color: #d35656;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  background-image: url('email-icon.png');
+  background-repeat: no-repeat;
+  background-position: 1000px center;
+  padding-left: 40px;
+  font-size: 18px;
+} 
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* Set font and background color for the table header */
+table th {
+  font-size: 18px;
+  background-color: #6288b0;
+  color: white;
+  padding: 10px;
+}
+
+/* Set font size and padding for the table cells */
+table td {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Add zebra striping to the table rows */
+table tbody tr:nth-child(even) {
+  background-color: #bf4949;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #3cac5a;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.photo-list img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  width: 300px;
+  height: 300px;
+}
+
+.playlist video:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  width: 500px;
+  height: 500px;
+}
+
+.qr img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  width: 200px;
+  height: 200px;
+  
+
 }
